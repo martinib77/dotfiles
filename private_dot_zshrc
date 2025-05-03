@@ -9,6 +9,15 @@ fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
+# https://unix.stackexchange.com/a/389883
+# Bash and zsh have different defaults. Zsh doesn't save the history to a file by default.
+# MacOS comes with a system configuration file (/etc/zshrc) that sets
+# up a few things including a slightly fancier prompt and per-terminal history.
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 
 eval "$(fnm env --use-on-cd --shell zsh)"
 
