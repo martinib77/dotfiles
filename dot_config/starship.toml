@@ -1,116 +1,190 @@
-# ~/.config/starship.toml
+[aws]
+symbol = "  "
 
-# Inserts a blank line between shell prompts
-add_newline = true
+[buf]
+symbol = " "
 
-# Change the default prompt format
-format = """\
-[╭╴](238)$battery $env_var\
-$all[╰─](238)$character"""
+[bun]
+symbol = " "
 
-# Change the default prompt characters
-[character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+[c]
+symbol = " "
 
-# Shows an icon that should be included by zshrc script based on the distribution or os
-[env_var.STARSHIP_DISTRO]
-format = '[$env_value](bold white)'  # removed space between distro and rest for pwsh
-variable = "STARSHIP_DISTRO"
-disabled = false
+[cpp]
+symbol = " "
 
-# Shows the username
-[username]
-style_user = "white bold"
-style_root = "black bold"
-format = "[$user]($style) "
-disabled = true  # disable in powershell
-show_always = false
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+[deno]
+symbol = " "
 
 [directory]
-truncation_length = 3
-truncation_symbol = "…/"
-home_symbol = "ﯟ ~"
-read_only_style = "197"
-read_only = "  "
-format = "[$path]($style)[$read_only]($read_only_style) "
-
-[git_branch]
-symbol = " "
-format = "on [$symbol$branch]($style) "
-truncation_length = 4
-truncation_symbol = "…/"
-style = "bold green"
-
-[git_status]
-format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
-up_to_date = " "
-untracked = " "
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
-stashed = " "
-modified = " "
-staged = '[++\($count\)](green)'
-renamed = "襁 "
-deleted = " "
-
-[terraform]
-format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
-
-[vagrant]
-format = "via [ vagrant $version]($style) "
+read_only = " 󰌾"
 
 [docker_context]
-format = "via [ $context](bold blue) "
+symbol = " "
 
-[helm]
-format = "via [ $version](bold purple) "
+[elixir]
+symbol = " "
 
-[python]
-symbol = " "
-python_binary = "python3"
+[elm]
+symbol = " "
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[gcloud]
+symbol = "  "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
 
 [nodejs]
-format = "via [ $version](bold green) "
-disabled = true
+symbol = " "
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
 
 [ruby]
-format = "via [ $version]($style) "
+symbol = " "
 
-[kubernetes]
-format = 'on [ $context\($namespace\)](bold purple) '
-disabled = false
-[kubernetes.context_aliases]
-"clcreative-k8s-staging" = "cl-k8s-staging"
-"clcreative-k8s-production" = "cl-k8s-prod"
+[rust]
+symbol = "󱘗 "
 
-# Battery configuration
-[battery]
-full_symbol = '󰁹 '         # Symbol for full battery
-charging_symbol = '󱐋 '    # Symbol for charging battery
-discharging_symbol = '󱊣 ' # Symbol for discharging battery (low battery)
-empty_symbol = '󰂎 '       # Symbol for empty battery
-unknown_symbol = '󰁽 '    # Symbol for unknown battery status
-format = "[$symbol$percentage]($style)" # Format for displaying battery percentage
-disabled = false  # Enable the battery module
+[scala]
+symbol = " "
 
-# Battery display thresholds
-[[battery.display]]
-threshold = 10
-style = "bold red"  # Red bold style when battery is below 10%
+[swift]
+symbol = " "
 
-[[battery.display]]
-threshold = 30
-style = "bold yellow"  # Yellow style when battery is between 10% and 30%
+[zig]
+symbol = " "
 
-[[battery.display]]
-threshold = 50
-style = "bold green"  # Green style when battery is between 30% and 50%
-
-[[battery.display]]
-threshold = 100
-style = "bold green"  # Green style when battery is fully charged
-charging_symbol = '󱐋 '  # Charging symbol when battery is charging
+[gradle]
+symbol = " "
