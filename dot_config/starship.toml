@@ -10,9 +10,6 @@ symbol = " "
 [c]
 symbol = " "
 
-[cpp]
-symbol = " "
-
 [cmake]
 symbol = " "
 
@@ -111,7 +108,6 @@ Amazon = " "
 Android = " "
 Arch = " "
 Artix = " "
-CachyOS = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -133,7 +129,6 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-Nobara = " "
 OpenBSD = "󰈺 "
 openSUSE = " "
 OracleLinux = "󰌷 "
@@ -161,9 +156,6 @@ symbol = " "
 
 [pijul_channel]
 symbol = " "
-
-[pixi]
-symbol = "󰏗 "
 
 [python]
 symbol = " "
