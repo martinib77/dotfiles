@@ -6,3 +6,4 @@ zmodule zsh-users/zsh-history-substring-search
 zmodule agkozak/zsh-z
 zmodule MichaelAquilina/zsh-you-should-use
 zmodule fdellwing/zsh-bat
+zmodule completion
