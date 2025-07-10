@@ -1,36 +1,20 @@
 
 [colors]
-draw_bold_text_with_bright_colors = true
-
-  [colors.cursor]
-  cursor = "#c7ccd1"
-  text = "#1c2023"
+draw_bold_text_with_bright_colors = false
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 13
+size = 14.0
 
-  [font.bold]
-  family = "MesloLGS Nerd Font"
-  style = "Bold"
+[font.normal]
+family = "MesloLGS Nerd Font"
+style = "Regular"
 
-  [font.bold_italic]
-  family = "MesloLGS Nerd Font"
-  style = "Bold Italic"
-
-  [font.italic]
-  family = "MesloLGS Nerd Font"
-  style = "Italic"
-
-  [font.normal]
-  family = "MesloLGS Nerd Font"
-  style = "Regular"
-
-  [font.offset]
-  x = 0
-  y = 1
+[font.offset]
+x = 0
+y = 0
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -128,19 +112,43 @@ history = 5_000
 save_to_clipboard = true
 
 [window]
-dynamic_padding = false
+dynamic_padding = true
 opacity = 1
 title = "Alacritty"
 
-  [window.class]
-  general = "Alacritty"
-  instance = "Alacritty"
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
 
-  [window.padding]
-  x = 6
-  y = 6
+[window.padding]
+x = 6
+y = 6
 
-[general]
-import = [
-  "/home/martinib/.nvm/versions/node/v20.9.0/lib/node_modules/alacritty-themes/themes/Catppuccin-Mocha.toml"
-]
+# Colors (Ayu Dark)
+
+# Default colors
+[colors.primary]
+background = '#0A0E14'
+foreground = '#B3B1AD'
+
+# Normal colors
+[colors.normal]
+black   = '#01060E'
+red     = '#EA6C73'
+green   = '#91B362'
+yellow  = '#F9AF4F'
+blue    = '#53BDFA'
+magenta = '#FAE994'
+cyan    = '#90E1C6'
+white   = '#C7C7C7'
+
+# Bright colors
+[colors.bright]
+black   = '#686868'
+red     = '#F07178'
+green   = '#C2D94C'
+yellow  = '#FFB454'
+blue    = '#59C2FF'
+magenta = '#FFEE99'
+cyan    = '#95E6CB'
+white   = '#FFFFFF'
