@@ -1,8 +1,5 @@
-## path: Library/Application Support/com.mitchellh.ghostty/config
-## ---
-
 font-family=MesloLGS Nerd Font
-font-size=13
+font-size=14
 theme=CobaltNext-Dark
 
 
