@@ -23,6 +23,6 @@ setopt appendhistory
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-export PATH=$PATH:~/.asdf/shims/
+export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 export PATH=$PATH:~/.local/bin
 
