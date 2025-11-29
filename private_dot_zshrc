@@ -1,13 +1,30 @@
-# https://zimfw.sh/docs/install/
-ZIM_HOME=~/.zim
+# --- Zimfw home siempre en $HOME ---
+export ZIM_HOME="$HOME/.zim"
 
-# Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
-if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
-  source ${ZIM_HOME}/zimfw.zsh init -q
+# --- Buscar automáticamente zimfw.zsh ---
+if [[ -f /opt/homebrew/opt/zimfw/share/zimfw.zsh ]]; then
+  # macOS Apple Silicon (brew)
+  source /opt/homebrew/opt/zimfw/share/zimfw.zsh
+
+elif [[ -f /usr/local/opt/zimfw/share/zimfw.zsh ]]; then
+  # macOS Intel (brew)
+  source /usr/local/opt/zimfw/share/zimfw.zsh
+
+elif [[ -f /usr/share/zimfw/zimfw.zsh ]]; then
+  # Linux (paquetes del sistema)
+  source /usr/share/zimfw/zimfw.zsh
+
+elif command -v zimfw >/dev/null; then
+  # Linux / otros (instalador oficial)
+  source "$(command -v zimfw)"
+
+else
+  echo "⚠️ zimfw no encontrado. Ejecuta el instalador."
 fi
 
-# Initialize modules.
-source ${ZIM_HOME}/init.zsh
+# --- Cargar la config generada ---
+source "$ZIM_HOME/init.zsh"
+
 
 # https://unix.stackexchange.com/a/389883
 # Bash and zsh have different defaults. Zsh doesn't save the history to a file by default.
