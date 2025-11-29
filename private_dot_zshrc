@@ -1,28 +1,28 @@
-# --- Zimfw home siempre en $HOME ---
+# --- Zimfw home ---
 export ZIM_HOME="$HOME/.zim"
 
-# --- Buscar automáticamente zimfw.zsh ---
+# --- Cargar sólo el loader correcto ---
 if [[ -f /opt/homebrew/opt/zimfw/share/zimfw.zsh ]]; then
   # macOS Apple Silicon (brew)
-  source /opt/homebrew/opt/zimfw/share/zimfw.zsh
+  source /opt/homebrew/opt/zimfw/share/zimfw.zsh init
 
 elif [[ -f /usr/local/opt/zimfw/share/zimfw.zsh ]]; then
   # macOS Intel (brew)
-  source /usr/local/opt/zimfw/share/zimfw.zsh
+  source /usr/local/opt/zimfw/share/zimfw.zsh init
 
 elif [[ -f /usr/share/zimfw/zimfw.zsh ]]; then
-  # Linux (paquetes del sistema)
-  source /usr/share/zimfw/zimfw.zsh
+  # Linux (paquete distro)
+  source /usr/share/zimfw/zimfw.zsh init
 
-elif command -v zimfw >/dev/null; then
-  # Linux / otros (instalador oficial)
-  source "$(command -v zimfw)"
+elif [[ -f "$ZIM_HOME/zimfw.zsh" ]]; then
+  # Instalador oficial
+  source "$ZIM_HOME/zimfw.zsh" init
 
 else
-  echo "⚠️ zimfw no encontrado. Ejecuta el instalador."
+  echo "⚠️ zimfw.zsh no encontrado"
 fi
 
-# --- Cargar la config generada ---
+# --- Cargar configuración ---
 source "$ZIM_HOME/init.zsh"
 
 
