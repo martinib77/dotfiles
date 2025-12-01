@@ -3,18 +3,22 @@
 Host mitic-datalake
     HostName 192.168.211.15
     User martin.irigaray
+    Port 22
 
 Host SISA_BD
     HostName 192.168.10.235
     User admin
+    Port 22
 
 Host SISA_APP
     HostName 192.168.10.237
     User admin
+    Port 22
 
 Host SISA_COMM
     HostName 192.168.10.236
     User admin
+    Port 22
 Host SISA_BD_18
     HostName 192.168.10.233
     User mirigaray
