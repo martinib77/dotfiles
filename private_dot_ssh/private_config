@@ -1,0 +1,27 @@
+# Managed by lazyssh
+
+Host mitic-datalake
+    HostName 192.168.211.15
+    User martin.irigaray
+
+Host SISA_BD
+    HostName 192.168.10.235
+    User admin
+
+Host SISA_APP
+    HostName 192.168.10.237
+    User admin
+
+Host SISA_COMM
+    HostName 192.168.10.236
+    User admin
+Host SISA_BD_18
+    HostName 192.168.10.233
+    User mirigaray
+    Port 2722
+    IdentityFile ~/.ssh/id_rsa
+
+Host SISA_SUPERSET
+    HostName 192.168.10.238
+    User mirigaray
+    Port 22
