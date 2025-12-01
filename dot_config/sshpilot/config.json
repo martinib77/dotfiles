@@ -1,0 +1,76 @@
+{
+  "config_version": 3,
+  "shortcuts": {},
+  "terminal": {
+    "theme": "tomorrow_night",
+    "font": "JetBrainsMono Nerd Font 13",
+    "scrollback_lines": 10000,
+    "cursor_blink": true,
+    "audible_bell": false,
+    "term": null,
+    "pass_through_mode": false,
+    "encoding": "UTF-8"
+  },
+  "ui": {
+    "show_hostname": true,
+    "auto_focus_terminal": true,
+    "confirm_close_tabs": true,
+    "remember_window_size": true,
+    "window_width": 1200,
+    "window_height": 800,
+    "sidebar_width": 250,
+    "group_color_display": "fill",
+    "use_group_color_in_tab": true,
+    "use_group_color_in_terminal": false,
+    "connection_sort_last": "name-asc"
+  },
+  "welcome": {
+    "background_color": null,
+    "tile_color": null
+  },
+  "connections_meta": {},
+  "ssh": {
+    "compression": false,
+    "auto_add_host_keys": true,
+    "batch_mode": false,
+    "verbosity": 0,
+    "debug_enabled": false,
+    "native_connect": true,
+    "use_isolated_config": false,
+    "ssh_overrides": [
+      "-o",
+      "StrictHostKeyChecking=accept-new"
+    ],
+    "strict_host_key_checking": "accept-new",
+    "connection_timeout": null,
+    "connection_attempts": null,
+    "keepalive_interval": null,
+    "keepalive_count_max": null
+  },
+  "file_manager": {
+    "force_internal": false,
+    "open_externally": false,
+    "sftp_keepalive_interval": 30,
+    "sftp_keepalive_count_max": 5,
+    "sftp_connect_timeout": 20
+  },
+  "security": {
+    "store_passwords": true,
+    "ssh_agent_forwarding": true
+  },
+  "connection_groups": {
+    "groups": {},
+    "connections": {},
+    "root_connections": [
+      "mitic-datalake",
+      "SISA_BD",
+      "SISA_APP",
+      "SISA_COMM",
+      "SISA_BD_18",
+      "SISA_SUPERSET"
+    ]
+  },
+  "updates": {
+    "check_on_startup": false
+  }
+}
