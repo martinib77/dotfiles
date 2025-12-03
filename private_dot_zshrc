@@ -49,3 +49,8 @@ bindkey '^[[B' history-substring-search-down
 export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 export PATH=$PATH:~/.local/bin
 
+# JAVA
+# JAVA_HOME dinámico según asdf
+export JAVA_HOME="$(asdf where java)"
+export PATH="$JAVA_HOME/bin:$PATH"
+
