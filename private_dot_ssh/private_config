@@ -29,3 +29,8 @@ Host SISA_SUPERSET
     HostName 192.168.10.238
     User mirigaray
     Port 22
+
+Host gitlab.com
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/id_gitlab_personal
