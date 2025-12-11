@@ -16,9 +16,9 @@
     "auto_focus_terminal": true,
     "confirm_close_tabs": true,
     "remember_window_size": true,
-    "window_width": 1200,
-    "window_height": 800,
-    "sidebar_width": 250,
+    "window_width": 995,
+    "window_height": 633,
+    "sidebar_width": 400,
     "group_color_display": "fill",
     "use_group_color_in_tab": true,
     "use_group_color_in_terminal": false,
@@ -59,18 +59,51 @@
     "ssh_agent_forwarding": true
   },
   "connection_groups": {
-    "groups": {},
-    "connections": {},
+    "groups": {
+      "ffb68d48-bc68-4fdd-a6ae-413b57418910": {
+        "id": "ffb68d48-bc68-4fdd-a6ae-413b57418910",
+        "name": "mitic",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "mitic-datalake",
+          "repo.mitic.gov.py"
+        ],
+        "expanded": true,
+        "order": 0,
+        "color": "rgb(165,29,45)"
+      },
+      "6da60aca-9314-4158-8663-6b57927c8ad4": {
+        "id": "6da60aca-9314-4158-8663-6b57927c8ad4",
+        "name": "sisa",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "SISA_BD",
+          "SISA_COMM",
+          "SISA_APP",
+          "SISA_BD_18",
+          "SISA_SUPERSET"
+        ],
+        "expanded": true,
+        "order": 1,
+        "color": "rgb(38,162,105)"
+      }
+    },
+    "connections": {
+      "mitic-datalake": "ffb68d48-bc68-4fdd-a6ae-413b57418910",
+      "SISA_BD": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_COMM": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_APP": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_BD_18": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_SUPERSET": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "repo.mitic.gov.py": "ffb68d48-bc68-4fdd-a6ae-413b57418910"
+    },
     "root_connections": [
-      "mitic-datalake",
-      "SISA_BD",
-      "SISA_APP",
-      "SISA_COMM",
-      "SISA_BD_18",
-      "SISA_SUPERSET"
+      "gitlab.com"
     ]
   },
   "updates": {
-    "check_on_startup": false
+    "check_on_startup": true
   }
 }
