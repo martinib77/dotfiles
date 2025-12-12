@@ -1,4 +1,14 @@
 font-family=MesloLGS Nerd Font
 font-size=14
+font-feature = liga
 
+background-opacity = 0.90
+
+# Cursor
+cursor-style = beam
+cursor-blink = true
+
+# Renderizado
+vsync = true
+dpi-aware = true
 
