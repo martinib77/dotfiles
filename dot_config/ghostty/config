@@ -5,10 +5,7 @@ font-feature = liga
 background-opacity = 0.90
 
 # Cursor
-cursor-style = beam
-cursor-blink = true
+cursor-style = block
 
-# Renderizado
-vsync = true
-dpi-aware = true
+
 
