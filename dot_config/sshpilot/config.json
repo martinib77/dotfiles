@@ -22,7 +22,8 @@
     "group_color_display": "fill",
     "use_group_color_in_tab": true,
     "use_group_color_in_terminal": false,
-    "connection_sort_last": "name-asc"
+    "connection_sort_last": "name-asc",
+    "welcome_page_layout": "cards"
   },
   "welcome": {
     "background_color": null,
