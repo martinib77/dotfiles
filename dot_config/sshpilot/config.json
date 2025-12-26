@@ -89,6 +89,19 @@
         "expanded": true,
         "order": 1,
         "color": "rgb(38,162,105)"
+      },
+      "228f9b64-7db0-4bea-96ca-4aeefbbed763": {
+        "id": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
+        "name": "IDEATI",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "gitlab.com",
+          "CENTOS"
+        ],
+        "expanded": true,
+        "order": 2,
+        "color": "rgb(26,95,180)"
       }
     },
     "connections": {
@@ -98,11 +111,11 @@
       "SISA_APP": "6da60aca-9314-4158-8663-6b57927c8ad4",
       "SISA_BD_18": "6da60aca-9314-4158-8663-6b57927c8ad4",
       "SISA_SUPERSET": "6da60aca-9314-4158-8663-6b57927c8ad4",
-      "repo.mitic.gov.py": "ffb68d48-bc68-4fdd-a6ae-413b57418910"
+      "repo.mitic.gov.py": "ffb68d48-bc68-4fdd-a6ae-413b57418910",
+      "gitlab.com": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
+      "CENTOS": "228f9b64-7db0-4bea-96ca-4aeefbbed763"
     },
-    "root_connections": [
-      "gitlab.com"
-    ]
+    "root_connections": []
   },
   "updates": {
     "check_on_startup": true
