@@ -38,6 +38,7 @@ Host gitlab.com
 Host repo.mitic.gov.py
     HostName repo.mitic.gov.py
     User git
+    Port 22
     IdentityFile ~/.ssh/id_gitlab_mitic
 
 
@@ -45,3 +46,4 @@ Host CENTOS
     HostName 192.168.50.80
     User mitic
     PreferredAuthentications password
+    Port 22
