@@ -40,3 +40,8 @@ Host repo.mitic.gov.py
     User git
     IdentityFile ~/.ssh/id_gitlab_mitic
 
+
+Host CENTOS
+    HostName 192.168.50.80
+    User mitic
+    PreferredAuthentications password
