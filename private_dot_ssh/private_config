@@ -47,3 +47,7 @@ Host CENTOS
     User mitic
     PreferredAuthentications password
     Port 22
+
+Host Oracle
+    HostName 192.168.50.32
+    User mitic
