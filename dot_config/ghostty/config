@@ -2,7 +2,7 @@ font-family=MesloLGS Nerd Font
 font-size=14
 font-feature = liga
 
-background-opacity = 0.90
+background-opacity = 0.98
 
 # Cursor
 cursor-style = block
