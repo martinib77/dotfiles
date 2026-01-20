@@ -3,6 +3,8 @@ font-size=14
 font-feature = liga
 
 background-opacity = 0.98
+macos-titlebar-style = "transparent"
+
 
 # Cursor
 cursor-style = block
