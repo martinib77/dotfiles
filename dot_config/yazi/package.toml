@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "KKV9/compress"
-rev = "e6007f7"
-hash = "e0b1051849756dd72fca874c320259a"
+rev = "13e89fb"
+hash = "b6e2e69e13ba419f68140910900cbbcd"
 
 [flavor]
 deps = []
