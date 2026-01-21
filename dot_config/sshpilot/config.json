@@ -117,7 +117,10 @@
       "CENTOS": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
       "Oracle": "228f9b64-7db0-4bea-96ca-4aeefbbed763"
     },
-    "root_connections": []
+    "root_connections": [
+      "ssh.dev.azure.com",
+      "gitlab-siath"
+    ]
   },
   "updates": {
     "check_on_startup": true
