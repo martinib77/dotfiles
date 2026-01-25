@@ -53,6 +53,14 @@ Host gitlab.com
     AddKeysToAgent yes
     UseKeychain yes
 
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_ideati
+    IdentitiesOnly yes
+    AddKeysToAgent yes
+    UseKeychain yes
+
 Host CENTOS
     HostName 192.168.50.80
     User mitic
