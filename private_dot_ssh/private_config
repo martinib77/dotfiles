@@ -58,7 +58,7 @@ Host gitlab.com
 Host github.com
     HostName github.com
     User git
-    IdentityFile ~/.ssh/id_rsa_ideati
+    IdentityFile ~/.ssh/id_ed_personal
     IdentitiesOnly yes
     AddKeysToAgent yes
     UseKeychain yes
