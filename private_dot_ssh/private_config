@@ -9,6 +9,7 @@ Host SISA_BD
     HostName 192.168.10.235
     User admin
     PreferredAuthentications password
+
 Host SISA_APP
     HostName 192.168.10.237
     User admin
@@ -18,6 +19,7 @@ Host SISA_COMM
     HostName 192.168.10.236
     User admin
     Port 22
+
 Host SISA_BD_18
     HostName 192.168.10.233
     User mirigaray
