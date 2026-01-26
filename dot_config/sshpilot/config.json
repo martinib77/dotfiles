@@ -119,7 +119,8 @@
     },
     "root_connections": [
       "ssh.dev.azure.com",
-      "gitlab-siath"
+      "gitlab-siath",
+      "github.com"
     ]
   },
   "updates": {
