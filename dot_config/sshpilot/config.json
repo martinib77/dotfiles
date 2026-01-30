@@ -103,6 +103,18 @@
         "expanded": true,
         "order": 2,
         "color": "rgb(26,95,180)"
+      },
+      "b67c73e7-2e3e-4df5-99fa-100b676a1230": {
+        "id": "b67c73e7-2e3e-4df5-99fa-100b676a1230",
+        "name": "AZURE",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "AzureVM"
+        ],
+        "expanded": true,
+        "order": 3,
+        "color": "rgb(98,160,234)"
       }
     },
     "connections": {
@@ -115,7 +127,8 @@
       "repo.mitic.gov.py": "ffb68d48-bc68-4fdd-a6ae-413b57418910",
       "gitlab.com": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
       "CENTOS": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
-      "Oracle": "228f9b64-7db0-4bea-96ca-4aeefbbed763"
+      "Oracle": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
+      "AzureVM": "b67c73e7-2e3e-4df5-99fa-100b676a1230"
     },
     "root_connections": [
       "ssh.dev.azure.com",
