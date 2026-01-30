@@ -72,3 +72,9 @@ Host CENTOS
 Host Oracle
     HostName 192.168.50.32
     User mitic
+
+Host AzureVM
+    HostName 4.150.192.250
+    User azureuser
+    IdentityFile /Users/martinib/Downloads/ideati-infra-ubuntu_key.pem
+    IdentitiesOnly yes
