@@ -110,11 +110,37 @@
         "parent_id": null,
         "children": [],
         "connections": [
-          "AzureVM"
+          "AzureVM",
+          "ssh.dev.azure.com"
         ],
         "expanded": true,
         "order": 3,
         "color": "rgb(98,160,234)"
+      },
+      "abeba65c-0566-4f3a-b64a-946c6e603308": {
+        "id": "abeba65c-0566-4f3a-b64a-946c6e603308",
+        "name": "SIATH",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "SIATH_KEYCLOAK",
+          "gitlab-siath"
+        ],
+        "expanded": true,
+        "order": 4,
+        "color": "rgb(153,193,241)"
+      },
+      "93c6006a-dced-4e74-8844-9a5c1808c722": {
+        "id": "93c6006a-dced-4e74-8844-9a5c1808c722",
+        "name": "GITHUB",
+        "parent_id": null,
+        "children": [],
+        "connections": [
+          "github.com"
+        ],
+        "expanded": true,
+        "order": 5,
+        "color": "rgb(0,0,0)"
       }
     },
     "connections": {
@@ -128,13 +154,13 @@
       "gitlab.com": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
       "CENTOS": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
       "Oracle": "228f9b64-7db0-4bea-96ca-4aeefbbed763",
-      "AzureVM": "b67c73e7-2e3e-4df5-99fa-100b676a1230"
+      "AzureVM": "b67c73e7-2e3e-4df5-99fa-100b676a1230",
+      "SIATH_KEYCLOAK": "abeba65c-0566-4f3a-b64a-946c6e603308",
+      "ssh.dev.azure.com": "b67c73e7-2e3e-4df5-99fa-100b676a1230",
+      "gitlab-siath": "abeba65c-0566-4f3a-b64a-946c6e603308",
+      "github.com": "93c6006a-dced-4e74-8844-9a5c1808c722"
     },
-    "root_connections": [
-      "ssh.dev.azure.com",
-      "gitlab-siath",
-      "github.com"
-    ]
+    "root_connections": []
   },
   "updates": {
     "check_on_startup": true
