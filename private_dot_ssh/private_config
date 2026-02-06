@@ -78,3 +78,10 @@ Host AzureVM
     User azureuser
     IdentityFile /Users/martinib/Downloads/ideati-infra-ubuntu_key.pem
     IdentitiesOnly yes
+
+Host SIATH_KEYCLOAK
+    HostName 172.17.35.40
+    User toor
+    Port 9855
+    PreferredAuthentications password
+    PubkeyAuthentication no
