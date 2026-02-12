@@ -1,0 +1,25 @@
+layout {
+  default_tab_template {
+    pane size=1 borderless=true {
+      plugin location="tab-bar"
+    }
+
+    children
+
+    pane size=1 borderless=true {
+      plugin location="status-bar"
+    }
+  }
+
+  tab name="talento-humano" {
+    pane split_direction="vertical" {
+      pane {
+        cwd "~/src/ideati/py/mitic/talento-humano"
+      }
+      pane {
+        cwd "~/src/ideati/py/mitic/mitic-repo/mitic-talento-humano"
+      }
+    }
+  }
+}
+
