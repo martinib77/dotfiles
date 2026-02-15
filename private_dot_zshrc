@@ -57,3 +57,6 @@ export PATH="$JAVA_HOME/bin:$PATH"
 # XDG directorios
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Use systemd user ssh-agent (avoid GNOME gcr ssh-agent quirks)
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
