@@ -1,5 +1,11 @@
 # Managed by lazyssh
 
+Host *
+  AddKeysToAgent yes
+  IdentitiesOnly yes
+  ServerAliveInterval 60
+  ServerAliveCountMax 30
+
 Host mitic-datalake
     HostName 192.168.211.15
     User martin.irigaray
@@ -35,33 +41,21 @@ Host ssh.dev.azure.com
     HostName ssh.dev.azure.com
     User git
     IdentityFile ~/.ssh/id_rsa_ideati
-    IdentitiesOnly yes
-    AddKeysToAgent yes
-    UseKeychain yes
 
 Host gitlab-siath
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/id_ed_siath
-    IdentitiesOnly yes
-    AddKeysToAgent yes
-    UseKeychain yes
 
 Host gitlab.com
     HostName gitlab.com
     User git
     IdentityFile ~/.ssh/id_ed_personal
-    IdentitiesOnly yes
-    AddKeysToAgent yes
-    UseKeychain yes
 
 Host github.com
     HostName github.com
     User git
     IdentityFile ~/.ssh/id_ed_personal
-    IdentitiesOnly yes
-    AddKeysToAgent yes
-    UseKeychain yes
 
 Host CENTOS
     HostName 192.168.50.80
@@ -77,7 +71,6 @@ Host AzureVM
     HostName 4.150.192.250
     User azureuser
     IdentityFile /Users/martinib/Downloads/ideati-infra-ubuntu_key.pem
-    IdentitiesOnly yes
 
 Host SIATH_KEYCLOAK
     HostName 172.17.35.40
@@ -85,3 +78,4 @@ Host SIATH_KEYCLOAK
     Port 9855
     PreferredAuthentications password
     PubkeyAuthentication no
+
