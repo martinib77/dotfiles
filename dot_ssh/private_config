@@ -79,3 +79,10 @@ Host SIATH_KEYCLOAK
     PreferredAuthentications password
     PubkeyAuthentication no
 
+
+Host SISA_BD_18_REPLICADO
+    HostName 192.168.11.235
+    User mirigaray
+    Port 2722
+    PreferredAuthentications password
+    PubkeyAuthentication no
