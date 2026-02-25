@@ -19,8 +19,8 @@ Host SISA_BD
 Host SISA_APP
     HostName 192.168.10.237
     User admin
-    Port 22
-
+    PreferredAuthentications password
+    PubkeyAuthentication no
 Host SISA_COMM
     HostName 192.168.10.236
     User admin
