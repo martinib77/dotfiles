@@ -21,6 +21,12 @@ Host SISA_APP
     User admin
     PreferredAuthentications password
     PubkeyAuthentication no
+
+Host 192.168.10.237
+    HostName 192.168.10.237
+    User sisadeploy
+    IdentityFile ~/.ssh/id_rsa_ideati
+
 Host SISA_COMM
     HostName 192.168.10.236
     User admin
