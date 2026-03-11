@@ -92,3 +92,21 @@ Host SISA_BD_18_REPLICADO
     Port 2722
     PreferredAuthentications password
     PubkeyAuthentication no
+
+Host SISA_COMM_ROCKY
+    HostName 192.168.11.236
+    User mirigaray
+    Port 2722
+    PreferredAuthentications password
+
+Host SISA_APP_ROCKY
+    HostName 192.168.11.237
+    User mirigaray
+    Port 2722
+    PreferredAuthentications password
+
+Host SISA_SUPERSET_ROCKY
+    HostName 192.168.11.238
+    User mirigaray
+    Port 2722
+    PreferredAuthentications password
