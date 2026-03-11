@@ -84,7 +84,10 @@
           "SISA_COMM",
           "SISA_APP",
           "SISA_BD_18",
-          "SISA_SUPERSET"
+          "SISA_SUPERSET",
+          "SISA_COMM_ROCKY",
+          "SISA_APP_ROCKY",
+          "SISA_SUPERSET_ROCKY"
         ],
         "expanded": true,
         "order": 1,
@@ -158,9 +161,15 @@
       "SIATH_KEYCLOAK": "abeba65c-0566-4f3a-b64a-946c6e603308",
       "ssh.dev.azure.com": "b67c73e7-2e3e-4df5-99fa-100b676a1230",
       "gitlab-siath": "abeba65c-0566-4f3a-b64a-946c6e603308",
-      "github.com": "93c6006a-dced-4e74-8844-9a5c1808c722"
+      "github.com": "93c6006a-dced-4e74-8844-9a5c1808c722",
+      "SISA_COMM_ROCKY": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_APP_ROCKY": "6da60aca-9314-4158-8663-6b57927c8ad4",
+      "SISA_SUPERSET_ROCKY": "6da60aca-9314-4158-8663-6b57927c8ad4"
     },
-    "root_connections": []
+    "root_connections": [
+      "192.168.10.237",
+      "SISA_BD_18_REPLICADO"
+    ]
   },
   "updates": {
     "check_on_startup": true
