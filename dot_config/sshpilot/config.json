@@ -168,7 +168,8 @@
     },
     "root_connections": [
       "192.168.10.237",
-      "SISA_BD_18_REPLICADO"
+      "SISA_BD_18_REPLICADO",
+      "192.168.11.237"
     ]
   },
   "updates": {
