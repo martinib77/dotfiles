@@ -27,6 +27,17 @@ Host 192.168.10.237
     User sisadeploy
     IdentityFile ~/.ssh/id_rsa_ideati
 
+Host 192.168.11.236
+    HostName 192.168.11.236
+    User sisadeploy
+    IdentityFile ~/.ssh/id_rsa_ideati
+
+Host 192.168.11.237
+    HostName 192.168.11.237
+    User sisadeploy
+    IdentityFile ~/.ssh/id_rsa_ideati
+
+
 Host SISA_COMM
     HostName 192.168.10.236
     User admin
