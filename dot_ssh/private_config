@@ -18,9 +18,11 @@ Host SISA_BD
 
 Host SISA_APP
     HostName 192.168.10.237
-    User admin
+    User mirigaray
     PreferredAuthentications password
     PubkeyAuthentication no
+    Port 2722
+    IdentityFile ~/.ssh/id_rsa
 
 Host 192.168.10.237
     HostName 192.168.10.237
