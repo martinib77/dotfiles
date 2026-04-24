@@ -19,11 +19,6 @@ Host SISA_APP
     Port 2722
     IdentityFile ~/.ssh/id_rsa_ideati
 
-Host SISA_COMM
-    HostName 192.168.10.236
-    User admin
-    Port 22
-
 Host SISA_BD_18
     HostName 192.168.10.233
     User mirigaray
@@ -86,10 +81,11 @@ Host SISA_BD_18_REPLICADO
     PubkeyAuthentication no
 
 Host SISA_COMM_ROCKY
-    HostName 192.168.11.236
+    HostName 192.168.10.236
     User mirigaray
     Port 2722
     PreferredAuthentications password
+    IdentityFile ~/.ssh/id_rsa_ideati
 
 Host SISA_SUPERSET_ROCKY
     HostName 192.168.11.238
@@ -104,6 +100,7 @@ Host 192.168.10.237
     IdentityFile ~/.ssh/id_rsa_ideati
 
 Host 192.168.10.236
-    HostName 192.168.11.236
+    HostName 192.168.10.236
     User sisadeploy
+    Port 2722
     IdentityFile ~/.ssh/id_rsa_ideati
