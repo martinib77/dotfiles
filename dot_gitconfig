@@ -78,7 +78,7 @@
   cp = cherry-pick -x
 
   # Clone a repository including all submodules
-  cl = clone -- recursive
+  cl = clone --recursive
 
   # Delete all untracked files and directories.
   # See`git help clean`
@@ -261,7 +261,7 @@
 
   # remove all branches that have been merged and deleted from origin
   # https://stackoverflow.com/a/17987721/1163125
-  prune-branches = "branch --merged | grep -v \"\\*\" | grep -Ev \"(\\*|main|master|develop|staging)\" | xargs -n 1 git branch -d"
+  prune-branches = "!git branch --merged | grep -v '\\*' | grep -Ev '(^ main$|^ master$|^ develop$|^ staging$)' | xargs -n 1 git branch -d"
 	pushf = push --force-with-lease --force-if-includes
 
 [apply]
@@ -271,8 +271,9 @@
   # automagically fix whitespace
   #whitespace = fix
 
-# [commit]
-#  template = ~/.gitmessage
+[commit]
+  verbose = true
+
 
 [color]
   # Use colors in Git commands that are capable of colored output when
@@ -396,7 +397,7 @@
   stat = true
 
   # Git has an option to display merge conflicts in diff3 format (by default it only displays the two files to be merged).
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 
   # Include summaries of merged commits in newly created merge commit messages
   log = true
@@ -414,14 +415,7 @@
   textconv = hexdump -v -C
 
 [help]
-  # Automatically correct and execute mistyped commands
-  #autocorrect = 1
-
-  autocorrect = 10
-  # e.g.: $ git lgo
-  # WARNING: You called a Git command named 'lgo', which does not exist.
-  # Continuing under the assumption that you meant 'log'
-  # in 1.0 seconds automatically...
+  autocorrect = prompt
 
 [push]
   # See `git help config` and search for "push.default"
@@ -477,9 +471,9 @@
 
 [pager]
   color = true
-  diff = diff-highlight | less
-  log = diff-highlight | less
-  show = diff-highlight | less
+#  diff = diff-highlight | less
+#  log = diff-highlight | less
+#  show = diff-highlight | less
 
 [rebase]
   # Use --autosquash by default. It's not like one would write !fixup message by accident.
@@ -499,20 +493,26 @@
 [fetch]
   # This will remove local branches that were deleted remotely when git fetch or git pull was performed.
 	prune = true
-
+  pruneTags = true
+  
 # [init]
 #  templatedir = ~/.git-templates
 
 [include]
   path = .gitconfig.extra
+
 [pull]
+  ff = only
 	rebase = true
+
 [init]
 	defaultBranch = main
 
 [column]
   ui = auto
+
 [branch]
   sort = -committerdate
+
 [tag]
   sort = version:refname
