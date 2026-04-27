@@ -40,6 +40,11 @@ Host gitlab-siath
     User git
     IdentityFile ~/.ssh/id_ed_siath
 
+Host gitlab-ideati
+    HostName gitlab.com
+    User git
+    IdentityFile ~/.ssh/id_ed_siath
+
 Host gitlab.com
     HostName gitlab.com
     User git
