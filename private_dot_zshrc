@@ -61,3 +61,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 if [[ "$OSTYPE" == linux* ]]; then
   export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 fi
+
+# aslias para eza (sustituyen los usados en zim-exa
+alias ls="eza --icons --group-directories-first"
+alias ll="eza -l --git --icons"
