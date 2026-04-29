@@ -62,6 +62,11 @@ if [[ "$OSTYPE" == linux* ]]; then
   export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 fi
 
-# aslias para eza (sustituyen los usados en zim-exa
-alias ls="eza --icons --group-directories-first"
-alias ll="eza -l --git --icons"
+# aliases para eza
+if command -v eza >/dev/null 2>&1; then
+  alias ls="eza --icons --group-directories-first"
+  alias ll="eza -l --git --icons --group-directories-first"
+  alias la="eza -la --git --icons --group-directories-first"
+  alias lt="eza --tree --level=2 --icons --group-directories-first"
+  alias tree="eza --tree --icons"
+fi
