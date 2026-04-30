@@ -1,3 +1,6 @@
+# para habilitar el profiling
+# zmodload zsh/zprof
+
 # --- Zimfw home ---
 export ZIM_HOME="$HOME/.zim"
 
@@ -70,3 +73,7 @@ if command -v eza >/dev/null 2>&1; then
   alias lt="eza --tree --level=2 --icons --group-directories-first"
   alias tree="eza --tree --icons"
 fi
+
+# para mostrar el resultado de profiling
+# zprof
+
