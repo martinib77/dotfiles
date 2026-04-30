@@ -1,8 +1,8 @@
 zmodule zsh-users/zsh-autosuggestions
-zmodule completion
 zmodule zsh-users/zsh-syntax-highlighting
+zmodule zimfw/exa
 zmodule joke/zim-starship
 zmodule zsh-users/zsh-history-substring-search
 zmodule agkozak/zsh-z
 zmodule fdellwing/zsh-bat
-zmodule zimfw/exa
+# zmodule completion
