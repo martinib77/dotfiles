@@ -9,7 +9,7 @@
 {
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "ui_font_size": 16,
   "buffer_font_size": 15,
@@ -17,5 +17,35 @@
     "mode": "system",
     "light": "One Light",
     "dark": "Ayu Dark",
+  },
+  "buffer_font_family": "Monaspace Neon NF",
+  "buffer_line_height": "comfortable",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true,
+  },
+  "ui_font_family": "Monaspace Argon NF",
+
+  "buffer_font_weight": 450,
+  "ui_font_weight": 500,
+
+  "cursor_blink": true,
+  "show_whitespaces": "selection",
+
+  "indent_guides": {
+    "enabled": true,
+  },
+
+  "soft_wrap": "editor_width",
+  "preferred_line_length": 100,
+
+  "tab_size": 2,
+  "hard_tabs": false,
+
+  "vim_mode": true,
+
+  "terminal": {
+    "font_family": "Monaspace Xenon NF",
+    "font_size": 14,
   },
 }
