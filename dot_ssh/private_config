@@ -37,6 +37,12 @@ Host ssh.dev.azure.com
     User git
     IdentityFile ~/.ssh/id_rsa_ideati
 
+Host gitlab.senacsa.gov.py
+    HostName gitlab.senacsa.gov.py
+    User git
+    IdentityFile ~/.ssh/id_ed_siath
+    IdentitiesOnly yes
+
 Host gitlab-siath
     HostName gitlab.com
     User git
