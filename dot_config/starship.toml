@@ -7,6 +7,7 @@ $git_state\
 $git_status\
 $cmd_duration\
 $line_break\
+$azure\
 $python\
 $character"""
 
@@ -47,3 +48,10 @@ style = "yellow"
 [python]
 format = "[$virtualenv]($style) "
 style = "bright-black"
+
+[azure]
+disabled = false
+symbol = "󰠅 "
+format = "[$symbol$subscription]($style) "
+style = "bold blue"
+
