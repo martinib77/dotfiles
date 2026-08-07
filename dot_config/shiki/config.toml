@@ -86,7 +86,7 @@ pdf_theme = "default"
 
 [notebooks.obsidian]
 auto_sync = true
-path = "~/src/personal/obsidian"
+path = "/Users/martinib/src/personal/obsidian"
 hidden = false
 
 [snippets]
