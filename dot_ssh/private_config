@@ -30,7 +30,7 @@ Host SISA_BD_18
 Host SISA_SUPERSET
     HostName 192.168.10.238
     User mirigaray
-    Port 22
+    Port 2722
 
 Host ssh.dev.azure.com
     HostName ssh.dev.azure.com
@@ -99,13 +99,6 @@ Host SISA_COMM_ROCKY
     Port 2722
     PreferredAuthentications password
     IdentityFile ~/.ssh/id_rsa_ideati
-
-Host SISA_SUPERSET_ROCKY
-    HostName 192.168.11.238
-    User mirigaray
-    Port 2722
-    PreferredAuthentications password
-
 
 Host 192.168.10.237
     HostName 192.168.10.237
