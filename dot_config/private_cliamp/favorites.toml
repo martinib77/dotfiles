@@ -1,0 +1,18 @@
+[[entry]]
+favorited_at = "2026-09-13T18:11:04Z"
+path = "https://radios.iwstreaming.uy/8030/stream"
+title = "Babel [128k] · Uruguay"
+genre = "instrumental,jazz,music,radio pública,uruguay"
+realtime = true
+provider_meta.radio.country = "Uruguay"
+provider_meta.radio.codec = "MP3"
+provider_meta.radio.bitrate = "128"
+
+[[entry]]
+favorited_at = "2026-09-13T02:52:47Z"
+path = "https://streamingcasazorrilla.innovanexo.com:8000/radiocarve850.mp3"
+title = "Radio Carve [128k] · Uruguay"
+realtime = true
+provider_meta.radio.country = "Uruguay"
+provider_meta.radio.codec = "MP3"
+provider_meta.radio.bitrate = "128"
