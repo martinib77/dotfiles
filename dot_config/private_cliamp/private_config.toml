@@ -1,5 +1,7 @@
-theme = "hackerman"
+theme = "miasma"
 
 show_metadata = true
 repeat = "Off"
 visualizer = "Bars"
+eq_preset = "Jazz"
+eq = [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
