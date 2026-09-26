@@ -1,6 +1,6 @@
 theme = "miasma"
 
-show_metadata = true
+show_metadata = false
 repeat = "Off"
 visualizer = "Bars"
 eq_preset = "Jazz"
