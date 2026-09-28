@@ -4,7 +4,6 @@ cmd_fullscreen
 cmd_slideshow
 _separator_
 cmd_export
-cmd_properties
 _separator_
 cmd_fileOpM
 cmd_convert
