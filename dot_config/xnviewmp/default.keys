@@ -1,14 +1,15 @@
 [Browser]
 cmd_addFavorite 
 cmd_archive 
+cmd_audioCompanion 
 cmd_banner Ctrl+B
 cmd_batchRename 
 cmd_capture 
 cmd_catFocus F9
 cmd_catalogExport 
 cmd_catalogImport 
-cmd_category 
 cmd_changeTime 
+cmd_channelClipping 
 cmd_clean 
 cmd_compare Shift+C
 cmd_contactSheet 
@@ -22,6 +23,7 @@ cmd_copyPathname
 cmd_createMulti 
 cmd_cutFile Ctrl+X
 cmd_deleteFile 
+cmd_editEXIF 
 cmd_editGPS 
 cmd_editIPTC Ctrl+I
 cmd_editXMP 
@@ -119,6 +121,8 @@ cmd_rating5m
 cmd_realSize Ctrl+/
 cmd_rebuildThumb 
 cmd_refreshThumb F5
+cmd_removeAlbum 
+cmd_removeAllAlbums 
 cmd_removeAllCat 
 cmd_removeCat 
 cmd_renameFile F2
@@ -131,9 +135,13 @@ cmd_selectAllFiles
 cmd_selectAllImages 
 cmd_selectNone 
 cmd_selectTagged 
+cmd_sessionClear 
+cmd_sessionLoad 
+cmd_sessionSave 
 cmd_setComment Ctrl+D
 cmd_showAlpha 
 cmd_showBlue 
+cmd_showClipping 
 cmd_showGreen 
 cmd_showHeader 
 cmd_showHidden 
@@ -160,6 +168,7 @@ cmd_treeVTabs
 cmd_untagAll 
 cmd_upFolder Backspace
 cmd_updateDB 
+cmd_updateDB2 
 cmd_updateFiles 
 cmd_useAlpha Ctrl+H
 cmd_useSmallToolbar 
@@ -189,9 +198,14 @@ cmd_autoLevels Ctrl+Alt+L
 cmd_browse 
 cmd_canvasResize Shift+C
 cmd_capture 
+cmd_centerImage 
 cmd_changeDepth 
+cmd_channelClipping 
 cmd_clean 
 cmd_clear 
+cmd_clipBoth 
+cmd_clipHighlights 
+cmd_clipShadows 
 cmd_close 
 cmd_colorsCount 
 cmd_conbright 
@@ -206,6 +220,8 @@ cmd_copyPathname
 cmd_crop Shift+X
 cmd_curves 
 cmd_cut Ctrl+X
+cmd_delHStrip 
+cmd_delVStrip 
 cmd_deleteFile 
 cmd_desaturate 
 cmd_editCmap 
@@ -291,6 +307,7 @@ cmd_pageNext Shift+PgDown
 cmd_pagePrevious Shift+PgUp
 cmd_paint Shift+D
 cmd_paste Ctrl+V
+cmd_pasteIn 
 cmd_posterize 
 cmd_print Ctrl+P
 cmd_printAll 
@@ -339,6 +356,7 @@ cmd_setdpi
 cmd_shadow 
 cmd_showAlpha M
 cmd_showBlue 
+cmd_showClipping J
 cmd_showColorInfo Ctrl+Shift+I
 cmd_showGreen 
 cmd_showGrid 
