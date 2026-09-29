@@ -5,4 +5,4 @@ zmodule joke/zim-starship
 zmodule zsh-users/zsh-history-substring-search
 zmodule agkozak/zsh-z
 zmodule fdellwing/zsh-bat
-# zmodule completion
+zmodule completion
