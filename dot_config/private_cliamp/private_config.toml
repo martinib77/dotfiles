@@ -1,7 +1,7 @@
-theme = "miasma"
+theme = "neon-blade-runner"
 
-show_metadata = false
+show_metadata = true
 repeat = "Off"
 visualizer = "Bars"
 eq_preset = "Jazz"
-eq = [-1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+eq = [2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
