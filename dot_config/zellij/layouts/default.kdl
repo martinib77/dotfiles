@@ -1,22 +1,52 @@
+
 layout {
     default_tab_template {
         children
 
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-                format_left   "{mode} {tabs}"
-                format_right "{pipe_zjhints}{datetime} "
 
-                // Note: this is necessary or else zjstatus won't render the pipe:
-                pipe_zjhints_format "{output}"
+                // Diseño general
+                format_left   "{mode} #[fg=#89b4fa]󰆍 {session} "
+                format_center "{tabs}"
+                format_right  "{command_git_branch} {datetime}"
+                format_space  ""
+                format_hide_on_overlength "true"
 
-                mode_normal "#[bg=blue] NORMAL "
+                // Modos: sin fondos de color
+                mode_normal  "#[fg=#a6e3a1,bold]● NORMAL "
+                mode_locked  "#[fg=#f38ba8,bold]● LOCKED "
+                mode_pane    "#[fg=#89b4fa,bold]● PANE "
+                mode_tab     "#[fg=#f9e2af,bold]● TAB "
+                mode_resize  "#[fg=#fab387,bold]● RESIZE "
+                mode_move    "#[fg=#cba6f7,bold]● MOVE "
+                mode_scroll  "#[fg=#f5c2e7,bold]● SCROLL "
+                mode_session "#[fg=#94e2d5,bold]● SESSION "
+                mode_tmux    "#[fg=#b4befe,bold]● TMUX "
 
-                tab_normal "#[fg=#6C7086] {name} "
-                tab_active "#[fg=#89B4FA,bold] {name} "
+                // Pestañas
+                tab_normal "#[fg=#6c7086] {index} {name} "
+                tab_active "#[fg=#cdd6f4,bold] {index} {name} "
 
-                datetime "#[fg=#6C7086] {format} "
+                tab_sync_indicator "󰓦 "
+                tab_fullscreen_indicator "󰊓 "
+                tab_floating_indicator "󰉈 "
+
+                // Rama Git del panel activo
+                command_git_branch_command "git branch --show-current"
+                command_git_branch_format "#[fg=#cba6f7] {stdout} "
+                command_git_branch_interval "10"
+                command_git_branch_rendermode "static"
+                command_git_branch_cwd "{focused_pane_cwd}"
+
+                // Reloj
+                datetime "#[fg=#f9e2af]󰥔 {format}"
                 datetime_format "%H:%M"
+                datetime_timezone "America/Panama"
+
+                // Apariencia
+                border_enabled "false"
+                hide_frame_for_single_pane "true"
             }
         }
     }
