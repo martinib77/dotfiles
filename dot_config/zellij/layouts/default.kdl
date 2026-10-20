@@ -43,7 +43,7 @@ layout {
                 // Reloj
                 datetime "#[fg=#f9e2af]󰥔 {format}"
                 datetime_format "%H:%M"
-                // datetime_timezone "America/Panama"
+                datetime_timezone "America/Panama"
 
                 // Apariencia
                 border_enabled "false"
