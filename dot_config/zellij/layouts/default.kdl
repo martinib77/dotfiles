@@ -25,10 +25,12 @@ layout {
 
                 // Pestañas
                 tab_normal "#[fg=#6c7086] {index} {name} "
-                tab_active "#[fg=#cdd6f4,bold] {index} {name} "
+                tab_active "#[fg=#cdd6f4,bold] {index} {name} #[fg=#f38ba8,bold]{fullscreen_indicator} "
 
+               
                 tab_sync_indicator "󰓦 "
-                tab_fullscreen_indicator "󰊓 "
+                // Indicador de fullscreen
+                tab_fullscreen_indicator "󰊓 FULLSCREEN "
                 tab_floating_indicator "󰉈 "
 
                 // Rama Git del panel activo
