@@ -2,5 +2,5 @@
 dotnet = "10.0.401"
 java = "temurin-25"
 maven = "3.9.9"
-node = "24.15.0"
+node = "24.22.1"
 python = "3.13.3"
