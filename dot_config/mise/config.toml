@@ -1,0 +1,4 @@
+[tools]
+dotnet = "10"
+java = "temurin-25"
+node = "26"
