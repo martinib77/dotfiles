@@ -1,4 +1,5 @@
 [tools]
 dotnet = "10"
 java = "temurin-25"
+maven = "3"
 node = "26"
