@@ -2,6 +2,6 @@ theme = "neon-blade-runner"
 
 show_metadata = true
 repeat = "Off"
-visualizer = "Bars"
+visualizer = "ClassicLED"
 eq_preset = "Jazz"
 eq = [2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
