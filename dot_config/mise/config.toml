@@ -1,5 +1,6 @@
 [tools]
 ansible-core = "latest"
+cliamp = "latest"
 dotnet = "10"
 java = "temurin-25"
 lazydocker = "latest"
