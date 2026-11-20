@@ -2,7 +2,7 @@
 ansible-core = "latest"
 bat = "latest"
 cliamp = "latest"
-dotnet = "11"
+dotnet = ["10", "11"]
 dua = "latest"
 duf = "latest"
 fastfetch = "latest"
