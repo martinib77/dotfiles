@@ -349,6 +349,9 @@
 
   # Enable the filesystem cache (for git bash | windows)
   fscache = true
+  
+  # use delta as diff viewer
+  pager = delta
 
 [diff]
   # Use more time to create better diffs.
@@ -378,7 +381,9 @@
   # See`git help config` and search for "diff.tool"
   #tool = opendiff
   tool = vimdiff
-	colorMoved = plain
+
+  colorMoved = default
+  
   mnemonicPrefix = true
 
 [difftool]
@@ -516,3 +521,14 @@
 
 [tag]
   sort = version:refname
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    line-numbers = true
+    side-by-side = true
+    syntax-theme = Dracula
+
+
