@@ -1,3 +1,14 @@
+git:
+  diffRenderers:
+    - name: Delta
+      command: delta --dark --paging=never --line-numbers
+
+    - name: Delta Side by Side
+      command: delta --dark --paging=never --line-numbers --side-by-side
+
+    - name: Default
+      type: rawGit
+
 gui:
   # DRACULA
   theme:
